@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+  <title>Angular Directives</title>
+  </head>
+<body ng-controller="mainCtrl">
+  <p>You are on the {{currentPage}} page.</p>
+  <nav-bar 
+  title="This is my website!"
+  when-clicked="changePage(thisIsTheNewPage)"></nav-bar>
+
+  <login-form
+  title="Log in!"
+  button-text="Login"></login-form>
+  <login-form
+  title="Returning user"
+  user-email="user.email"
+  buttonText="Welcome Back"></login-form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+  <script src="./app.js"></script>
+  <script src="./mainCtrl.js"></script>
+  <script src="./navBar.js"></script>
+  <script src="./hoverDirective.js"></script>
+  <script src="./loginDirective.js"></script>
+</body>
+</html>
+
+
